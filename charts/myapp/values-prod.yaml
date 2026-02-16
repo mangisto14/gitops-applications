@@ -3,4 +3,4 @@ replicaCount: 3  # בפרודקשן אנחנו רוצים זמינות גבוה�
 
 image:
   repository: mangisto14/myapp
-  tag: "v1.0.5"
+  tag: "d0f0107"
