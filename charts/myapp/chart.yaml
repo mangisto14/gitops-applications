@@ -1,0 +1,14 @@
+apiVersion: v2
+name: myapp
+description: A Helm chart for my Python microservice
+
+# סוג הצ'ארט - application הוא הסטנדרט (לעומת library)
+type: application
+
+# גרסת ה-Chart עצמו (גרסת הקונפיגורציה)
+# בכל פעם שתשנה את ה-Deployment או ה-Service, נהוג להעלות את הגרסה הזו
+version: 1.0.0
+
+# גרסת האפליקציה (הקוד שלך ב-Python)
+# בדרך כלל זה תואם לגרסת ה-Docker Image
+appVersion: "1.0.0"

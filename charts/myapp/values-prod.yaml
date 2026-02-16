@@ -1,0 +1,6 @@
+# values-prod.yaml
+replicaCount: 3  # בפרודקשן אנחנו רוצים זמינות גבוהה
+
+image:
+  repository: mangisto14/myapp
+  tag: "v1.0.5"

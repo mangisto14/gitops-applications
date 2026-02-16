@@ -1,0 +1,6 @@
+# values-dev.yaml
+replicaCount: 1  # ב-Dev מספיק פוד אחד
+
+image:
+  repository: mangisto14/myapp
+  tag: "1a2b3c4"  # ה-CI מחליף את זה בכל Push
