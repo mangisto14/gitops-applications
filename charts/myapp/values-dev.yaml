@@ -4,3 +4,27 @@ replicaCount: 1  # ב-Dev מספיק פוד אחד
 image:
   repository: mangisto14/myapp
   tag: "1a2b3c4"  # ה-CI מחליף את זה בכל Push
+
+
+service:
+  type: ClusterIP
+  port: 5678
+
+configData:
+  message: "Configured via ConfigMap"
+  port: "8080"
+
+secretData:
+  apiToken: "S3cr3tT0k3n"
+
+appLabel: myapp
+cronSchedule: "0 0 * * *" # פעם ביום בחצות
+
+daemonset:
+  resources:
+    requests:
+      cpu: "100m"
+      memory: "128Mi"
+    limits:
+      cpu: "500m"
+      memory: "256Mi"
