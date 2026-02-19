@@ -14,7 +14,8 @@ configData:
   message: "Configured via ConfigMap"
   port: "8080"
 
-
+secretData:
+  apiToken: "S3cr3tT0k3n"
 
 appLabel: myapp
 cronSchedule: "0 0 * * *" # פעם ביום בחצות
